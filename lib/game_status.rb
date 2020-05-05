@@ -36,4 +36,4 @@ def won?
       return win_combination
     else
       false
-    end 
+    end
