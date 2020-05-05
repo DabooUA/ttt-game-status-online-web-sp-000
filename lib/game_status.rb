@@ -16,8 +16,9 @@ right_column_win = [2,5,8], # Right column
 left_diagnol_win = [0,4,8], # First diagnol
 right_diagnol_win = [2,4,6]  # Second diagnol
 ]
-def won?(board)
-  for win_combination.each in WIN_COMBINATIONS
+def won?
+  for WIN_COMBINATIONS.each {
+
     # win_combination is a 3 element array of indexes that compose a win, [0,1,2]
     # grab each index from the win_combination that composes a win.
     win_index_1 = win_combination[0]
@@ -33,5 +34,6 @@ def won?(board)
     else
       false
     end
+  }
   end
 end
