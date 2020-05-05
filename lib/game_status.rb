@@ -41,14 +41,12 @@ def won?(board)
   end
 
   def full?(board)
-    board.each? do |cell|
+    board.all? do |cell|
       if cell == "X" || BOX == "O"
         return true
       else
        false
 
       end
-
     end
-
   end
