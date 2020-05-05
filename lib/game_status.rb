@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
 [2,4,6]  # Right diagnol
 ]
 def won?(board)
-   WIN_COMBINATIONS.each do |win_combination|
+   WIN_COMBINATIONS.each { |win_combination|
 
     # win_combination is a 3 element array of indexes that compose a win, [0,1,2]
     # grab each index from the win_combination that composes a win.
@@ -34,10 +34,10 @@ def won?(board)
        return win_combination # return the win_combination indexes that won.
     elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
        return win_combination # return the win_combination indexes that won.
-    else
-      false
+    
       end
-    end
+    }
+    return false
   end
 
   def full?(board)
