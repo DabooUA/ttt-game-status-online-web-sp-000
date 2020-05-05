@@ -42,8 +42,6 @@ def won?(board)
 
   def full?(board)
     board.all? {|cell| cell == "X" || cell == "O"}
-
-      
   end
 
 
