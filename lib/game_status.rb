@@ -41,10 +41,10 @@ def won?(board)
 
     if position_1 == "X" && position_2 == "X" && position_3 == "X"
       return win_combination # return the win_combination indexes that won.
-    else
-    return false
+
       end
     end
-
+  else
+  return false
 
   end
