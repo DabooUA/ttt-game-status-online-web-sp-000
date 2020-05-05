@@ -53,7 +53,7 @@ def won?(board)
     if cell == "X" || cell == "O"
       return true
     else
-      false
+      return false
     end
   end
 end
