@@ -60,3 +60,9 @@ def won?(board)
       false
     end
   end
+
+ def winner(board)
+   if won?(board)
+     return "X"
+   else
+     return "O"
