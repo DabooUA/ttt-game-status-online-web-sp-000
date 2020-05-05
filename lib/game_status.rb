@@ -64,7 +64,7 @@ def won?(board)
  def winner(board)
    player = []
    player = won?(board)
-   if over? == false 
+   if over? == false
      return nil
    else
      if board[player[0]] == "X"
