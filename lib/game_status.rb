@@ -17,7 +17,7 @@ left_diagnol_win = [0,4,8], # First diagnol
 right_diagnol_win = [2,4,6]  # Second diagnol
 ]
 def won?
-  for WIN_COMBINATIONS.each {
+  for WIN_COMBINATIONS.each {|win_combination|
 
     # win_combination is a 3 element array of indexes that compose a win, [0,1,2]
     # grab each index from the win_combination that composes a win.
