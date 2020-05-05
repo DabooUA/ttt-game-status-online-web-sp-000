@@ -39,3 +39,11 @@ def won?(board)
       end
     end
   end
+
+  def full?(board)
+    board.all? do |cell|
+      if cell == "X" || BOX == "O"
+        return true
+      else false
+      end
+    end
