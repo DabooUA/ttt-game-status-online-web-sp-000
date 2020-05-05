@@ -62,9 +62,12 @@ def won?(board)
   end
 
  def winner(board)
-   if won?(board) 
-
+   player = []
+   player = won?(board)
+   if board[player[0]] == "X"
+     return "X"
    else
+     return "O"
 
    end
  end
