@@ -66,9 +66,7 @@ def won?(board)
    player = won?(board)
    if board[player[0]] == "X"
      return "X"
-   elsif
+   else
      return "O"
-  else
-    nil
    end
  end
