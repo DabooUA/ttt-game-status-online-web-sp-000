@@ -13,8 +13,8 @@ left_column_win = [0,3,6], # Left column
 middle_column_win = [1,4,7], # Middle column
 right_column_win = [2,5,8], # Right column
 
-left_diagnol_win = [0,4,8], # First diagnol
-right_diagnol_win = [2,4,6]  # Second diagnol
+left_diagnol_win = [0,4,8], # Left diagnol
+right_diagnol_win = [2,4,6]  # Right diagnol
 ]
 def won?
   for WIN_COMBINATIONS.each {|win_combination|
