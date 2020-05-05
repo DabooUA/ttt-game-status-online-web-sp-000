@@ -64,11 +64,13 @@ def won?(board)
  def winner(board)
    player = []
    player = won?(board)
-   if board[player[0]] == "X"
-     return "X"
+   if draw?
+     true
    else
-     return "O"
+     if board[player[0]] == "X"
+       return "X"
+     else
+       return "O"
+     end
    end
- else
-   nil
- end
+end
