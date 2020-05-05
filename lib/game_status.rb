@@ -46,7 +46,8 @@ def won?(board)
         return true
 
       end
+    else
+      return false
     end
-  else
-    return false
+  
   end
