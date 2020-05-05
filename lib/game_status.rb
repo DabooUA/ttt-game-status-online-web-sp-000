@@ -46,3 +46,12 @@ def won?(board)
       end
     end
   end
+
+
+  def draw?(board)
+    board.all? do |cell|
+    if cell == "X" || cell == "O"
+
+    end
+  end
+end
