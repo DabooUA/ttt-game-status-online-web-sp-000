@@ -5,16 +5,16 @@ end
 
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
-top_row_win = [0,1,2], # Top row
-middle_row_win = [3,4,5], # Middle row
-bottom_row_win = [6,7,8], # Bottom row
+[0,1,2], # Top row
+[3,4,5], # Middle row
+[6,7,8], # Bottom row
 
-left_column_win = [0,3,6], # Left column
-middle_column_win = [1,4,7], # Middle column
-right_column_win = [2,5,8], # Right column
+[0,3,6], # Left column
+[1,4,7], # Middle column
+[2,5,8], # Right column
 
-left_diagnol_win = [0,4,8], # Left diagnol
-right_diagnol_win = [2,4,6]  # Right diagnol
+[0,4,8], # Left diagnol
+[2,4,6]  # Right diagnol
 ]
 def won?
   for WIN_COMBINATIONS.each {|win_combination|
