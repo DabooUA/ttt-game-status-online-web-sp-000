@@ -36,5 +36,5 @@ def won?
     else
       false
     end
-  }
-end
+  end
+}
