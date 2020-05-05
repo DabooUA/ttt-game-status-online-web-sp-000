@@ -52,3 +52,11 @@ def won?(board)
       false
     end
   end
+
+  def over?(board)
+    if won?(board) && !draw(board)
+      true
+    else
+      false
+    end
+  end
