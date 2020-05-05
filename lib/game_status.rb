@@ -44,8 +44,9 @@ def won?(board)
     board.all? do |cell|
       if cell == "X" || BOX == "O"
         return true
-      else
-        return false
+
       end
     end
+  else
+    return false
   end
