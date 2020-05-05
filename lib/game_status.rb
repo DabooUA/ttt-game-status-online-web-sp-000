@@ -63,8 +63,8 @@ def won?(board)
 
  def winner(board)
    if won?(board) == "X" || "O"
-     
+
    else
-     false
+     
    end
  end
