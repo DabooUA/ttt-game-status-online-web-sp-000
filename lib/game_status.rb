@@ -37,6 +37,4 @@ def won?
 }
     else
       false
-    end
-
 end
