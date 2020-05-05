@@ -69,6 +69,6 @@ def won?(board)
    elsif
      return "O"
   else
-    fales
+    nil
    end
  end
