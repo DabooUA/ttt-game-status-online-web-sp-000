@@ -43,7 +43,7 @@ def won?(board)
   def full?(board)
     board.any? do |cell|
       if cell == "X" || cell == "O"
-       true
+       return board
       else
        false
       end
@@ -52,5 +52,9 @@ def won?(board)
 
 
   def draw?(board)
-
-end
+    if !won?(board) && full?(board)
+      return true
+    else
+      false
+    end
+  end
